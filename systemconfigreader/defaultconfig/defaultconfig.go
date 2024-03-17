@@ -4,22 +4,22 @@ type Defconfig string
 
 const (
 	Defaultconfig = `
-# This is the robo-car yml configuration example
-# These parameters are examples and may be changed
+# This is the robo-car yml configuration example.
+# These parameters are examples and may be changed.
 broker:
-# Set the broker ip address, it may be a ip or a dns
+# Set the broker ip address, it may be a ip or a dns.
     ip:         "127.0.0.1"
-# Set the broker listening port
+# Set the broker listening port.
     port:       "61616"
 # Set the client id 
     client_id:  "robo-car"
-# If is true, the robo-car will connect itself as an anonymous user, otherwise specify the user and password below
+# If is true, the robo-car will connect itself as an anonymous user, otherwise specify the user and password below.
     anonymous_connection: false
 # Set the username
     username:   "robo-car"
-# Also, Set the password for the username given above
+# Also, Set the password for the username given above.
     password:   "secret"
-# If is an anonymous login, you can comment the username and password
+# If is an anonymous login, you can comment the username and password.
 
 topics:
 # Set the robo-car direction topic, in this topic the direction messages will be received.
@@ -43,7 +43,7 @@ gpios:
 # Set In1 gpio pin and In2 gpio pin (integer)
     motor_a_in_1_gpio_pin:    2
     motor_a_in_2_gpio_pin:    3
-# Set the linux pwm controller an channel for exporting it.
+# Set the linux pwm controller and a channel for exporting it.
     motor_a_pwm_channel:      "pwm0"
     motor_a_pwm_controller:   "pwmchip0"
 
